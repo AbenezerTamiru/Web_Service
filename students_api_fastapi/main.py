@@ -12,8 +12,11 @@ class Student(BaseModel):
 
 students = []
 
+@app.get("/students", response_model=List[Student])
+def get_students():
+    return students
+
 @app.post("/students", response_model=Student)
 def add_student(student: Student):
     students.append(student)
     return student
-
