@@ -151,4 +151,9 @@ Through this project, I learned how to define routes, handle HTTP methods, and p
 **Prepared by:** Betselot Abraham Gizaw  
 **Course:** Web Service  
 **Assignment:** No. 2 — Web API Design and Testing Tools (FastAPI + Swagger UI)  
-**GitHub Repository:** [text](https://github.com/mengistu3137/Web_Service/) 
+**GitHub Repository:** [Repo](https://github.com/mengistu3137/Web_Service/) 
+
+
+<img src="https://github.com/mengistu3137/Web_Service/blob/web-api-design-and-testing-tools/screenshots/endpoints.png" alt="endpoints" />
+<img src="https://github.com/mengistu3137/Web_Service/blob/web-api-design-and-testing-tools/screenshots/get_students.png" alt="endpoints" />
+<img src="https://github.com/mengistu3137/Web_Service/blob/web-api-design-and-testing-tools/screenshots/delete.png" alt="endpoints" />
