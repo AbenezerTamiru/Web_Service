@@ -78,7 +78,7 @@ public class UserController {
 ![Creating USer](Screenshot 2025-10-24 112212.png)
 *Caption for screenshot 1*
 
-![Getting User](Screenshot 2025-10-24 112305.png)
+![Getting User](Screenshot-2025-10-24 112352.png)
 *Caption for screenshot 2*
 ---
 
