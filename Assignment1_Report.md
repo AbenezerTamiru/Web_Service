@@ -76,10 +76,10 @@ public class UserController {
 ## Screenshots
 
 ![Creating USer](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot%202025-10-24%20112212.png)
-*Caption for screenshot 1*
+*Creating User*
 
 ![Getting User](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot-2025-10-24%20112352.png)
-*Caption for screenshot 2*
+*Getting User*
 ---
 
 ### 2.2 Web API Design and Testing (Postman)
