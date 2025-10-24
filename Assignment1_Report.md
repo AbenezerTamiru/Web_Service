@@ -73,6 +73,13 @@ public class UserController {
 }
 ```
 
+## Screenshots
+
+![Creating USer](Screenshot 2025-10-24 112212.png)
+*Caption for screenshot 1*
+
+![Getting User](Screenshot 2025-10-24 112305.png)
+*Caption for screenshot 2*
 ---
 
 ### 2.2 Web API Design and Testing (Postman)

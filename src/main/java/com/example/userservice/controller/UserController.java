@@ -3,9 +3,12 @@ package com.example.userservice.controller;
 import com.example.userservice.model.User;
 import com.example.userservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
@@ -19,8 +22,40 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+        Optional<User> user = userService.getUserById(id);
+        return user.map(ResponseEntity::ok)
+                  .orElse(ResponseEntity.notFound().build());
+    }
+
     @PostMapping
     public User addUser(@RequestBody User user) {
         return userService.addUser(user);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
+        Optional<User> updatedUser = userService.updateUser(id, user);
+        return updatedUser.map(ResponseEntity::ok)
+                         .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
+        boolean deleted = userService.deleteUser(id);
+        return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+    }
+
+    // Optional: Additional endpoints for convenience
+
+    @GetMapping("/count")
+    public int getUserCount() {
+        return userService.getUserCount();
+    }
+
+    @GetMapping("/{id}/exists")
+    public boolean userExists(@PathVariable Long id) {
+        return userService.userExists(id);
     }
 }
