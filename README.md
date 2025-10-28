@@ -146,10 +146,7 @@ This exercise demonstrated how to design and test a RESTful API using **FastAPI*
 FastAPI’s automatic documentation, type validation, and live testing capabilities simplify the API development process significantly.  
 Through this project, I learned how to define routes, handle HTTP methods, and perform structured testing without external tools like Postman.
 
----
 
-**Prepared by:** Betselot Abraham Gizaw  
-**Course:** Web Service  
 **Assignment:** No. 2 — Web API Design and Testing Tools (FastAPI + Swagger UI)  
 **GitHub Repository:** [Repo](https://github.com/mengistu3137/Web_Service/) 
 
