@@ -61,6 +61,18 @@ public class CalculatorServiceImpl implements Calculator {
     </S:Body>
 </S:Envelope>
 ```
+## Screenshots
+
+###  Server running successfully
+![Server running successfully](https://github.com/mengistu3137/Web_Service/blob/soap-based-web-services/screenshots/Screenshot%202025-10-24%20002201.jpg)
+
+### Tested successfully
+![Tested successfully](https://github.com/mengistu3137/Web_Service/blob/soap-based-web-services/screenshots/Screenshot%202025-10-24%20004030.jpg)
+
+###  Console log
+![Additional test](https://github.com/mengistu3137/Web_Service/blob/soap-based-web-services/screenshots/Screenshot%202025-10-24%20004407.jpg)
+
+
 
 ## 4. Results
 
@@ -81,6 +93,4 @@ public class CalculatorServiceImpl implements Calculator {
 
 Successfully created and tested a functional SOAP web service that handles arithmetic operations with proper XML/SOAP protocol compliance. The service demonstrates understanding of JAX-WS annotations, namespace management, and SOAP message structure.
 
----
-
-**Prepared by:** [natnael bayu tesfaye]
+-
