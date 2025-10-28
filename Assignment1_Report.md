@@ -1,12 +1,38 @@
-# Assignment 1 – Java Web Service Development Report
+# Assignment 1 Part 1 – Java Web Service Development Report
 
-**Course:**Elective I – Web Service   
-**Student Name:** [Your Full Name]  
-**ID Number:** [Your Student ID]  
+**Course:** Elective I – Web Service  
 **Instructor:** [Instructor Name]  
 **Date:** [Submission Date]  
-**GitHub Repository:** [GitHub Repo URL]
+**GitHub Repository:** [https://github.com/mengistu3137/Web_Service](https://github.com/mengistu3137/Web_Service)
 
+---
+
+## 👥 Team Members
+
+| No | Name | ID Number |
+|----|------|------------|
+| 1 | **Abenezer Tamiru** | RU2154/14 |
+| 2 | **Betselot Abraham** | RU1612/14 |
+| 3 | **Mengistu Tadesse** | RU1187/14 |
+| 4 | **Natnael Bayu** | RU1408/14 |
+| 5 | **Iman Hussen** | RU0279/14 |
+
+---
+
+> 🧑‍🏫 **Instructor Note:**  
+> This repository contains three separate branches, each representing one completed exercise for the assignment:  
+> 1. **Java Web Service Development** – [`Java-web-service`](https://github.com/mengistu3137/Web_Service/tree/Java-web-service)  
+> 2. **Web API Design and Testing Tools (Postman)** – [`*Web API Design and Testing Tools`](https://github.com/mengistu3137/Web_Service/tree/web-api-design-and-testing-tools)  
+> 3. **SOAP-based Web Services** – [`soap-based-web-services`](https://github.com/mengistu3137/Web_Service/tree/soap-based-web-services)  
+>
+> Each branch includes:
+> - Full implementation source code  
+> - A detailed README report following the required structure  
+> - Screenshots and test results demonstrating successful execution  
+>
+> Please navigate to the respective branches above to review each completed exercise in detail.
+
+---
 ---
 
 ## Table of Contents
@@ -73,68 +99,9 @@ public class UserController {
 }
 ```
 
-## Screenshots
-
-![Creating USer](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot%202025-10-24%20112212.png)
-*Creating User*
-
-![Getting User](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot-2025-10-24%20112352.png)
-*Getting User*
 ---
 
-### 2.2 Web API Design and Testing (Postman)
 
-**Steps:**
-1. Opened **Postman** and created a new collection named `User API`.
-2. Added requests for each HTTP method (GET, POST, PUT, DELETE).
-3. Verified responses and HTTP status codes.
-4. Saved responses for documentation.
-
-**Example Request:**
-```
-GET http://localhost:8080/users
-```
-
-**Example Response:**
-```json
-[
-  { "id": 1, "name": "John Doe" },
-  { "id": 2, "name": "Sara Smith" }
-]
-```
-
----
-
-### 2.3 SOAP-based Web Service
-
-**Steps:**
-1. Created a Java project and added `javax.xml.ws` dependency.
-2. Defined a service interface `CalculatorService`:
-   ```java
-   @WebService
-   public interface CalculatorService {
-       int add(int a, int b);
-       int subtract(int a, int b);
-   }
-   ```
-3. Implemented and published the service:
-   ```java
-   @WebService(endpointInterface = "service.CalculatorService")
-   public class CalculatorServiceImpl implements CalculatorService {
-       public int add(int a, int b) { return a + b; }
-       public int subtract(int a, int b) { return a - b; }
-   }
-
-   public class Publisher {
-       public static void main(String[] args) {
-           Endpoint.publish("http://localhost:8081/ws/calculator", new CalculatorServiceImpl());
-           System.out.println("Service is running...");
-       }
-   }
-   ```
-4. Tested the service using **SOAP UI** by sending XML requests.
-
----
 
 ## 3. Tools and Technologies Used
 
@@ -143,18 +110,21 @@ GET http://localhost:8080/users
 | **Java 17** | Programming language |
 | **Spring Boot** | RESTful API development |
 | **Maven** | Dependency and build management |
-| **Postman** | Testing REST APIs |
-| **SOAP UI** | Testing SOAP-based web services |
-| **Git & GitHub** | Version control and code hosting |
-| **JAX-WS** | Java API for XML Web Services |
-| **VS Code / IntelliJ IDEA** | Development environment |
+| **Postman** | Testing REST APIs 
+| **Git & GitHub** | Version control and code hosting
+| **VS Code| Development environment |
 
 ---
 
 ## 4. Results and Observations
 
 ### 4.1 RESTful Web Service (Postman Snapshots)
-*(Add screenshots here)*
+
+![Creating USer](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot%202025-10-24%20112212.png)
+*Creating User*
+
+![Getting User](https://github.com/mengistu3137/Web_Service/blob/Java-web-service/Screenshot-2025-10-24%20112352.png)
+*Getting User*
 
 Example Response:
 ```json
@@ -163,42 +133,14 @@ Example Response:
 }
 ```
 
-### 4.2 SOAP Web Service (SOAP UI Snapshots)
-*(Add screenshots here)*
 
-**Example SOAP Request:**
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:ser="http://service/">
-   <soapenv:Body>
-      <ser:add>
-         <a>5</a>
-         <b>10</b>
-      </ser:add>
-   </soapenv:Body>
-</soapenv:Envelope>
-```
-
-**Example SOAP Response:**
-```xml
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-   <soap:Body>
-      <ns2:addResponse xmlns:ns2="http://service/">
-         <return>15</return>
-      </ns2:addResponse>
-   </soap:Body>
-</soap:Envelope>
-```
-
----
 
 ## 5. Conclusion
 
-This assignment provided hands-on experience in developing and testing both REST and SOAP web services using Java.  
+This assignment provided hands-on experience in developing and testing both REST and Java web services using Java.  
 It helped in understanding:
-- How RESTful APIs use JSON for lightweight communication.
-- How SOAP uses XML for structured message exchange.
-- The importance of tools like Postman and SOAP UI in verifying web services.
+- How RESTful APIs use JSON for lightweight communication
+- The importance of tools like Postman in  web services.
 - Version control best practices with Git and GitHub.
 
 ---
@@ -207,12 +149,4 @@ It helped in understanding:
 
 1. [Spring Boot Official Documentation](https://spring.io/projects/spring-boot)
 2. [Postman API Testing Tool](https://www.postman.com/)
-3. [SOAP UI Tool](https://www.soapui.org/)
-4. [JAX-WS Java Documentation](https://docs.oracle.com/javaee/7/api/javax/xml/ws/package-summary.html)
-5. [GitHub Docs](https://docs.github.com/)
-
----
-
-**Prepared by:** [Mengistu Tadess]  
-**Date:** [oct 24,2025]  
 **GitHub Repository:** [(https://github.com/mengistu3137)]
