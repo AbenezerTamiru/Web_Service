@@ -1,8 +1,6 @@
 # Assignment 1 Part 1 – Java Web Service Development Report
 
 **Course:** Elective I – Web Service  
-**Instructor:** [Instructor Name]  
-**Date:** [Submission Date]  
 **GitHub Repository:** [https://github.com/mengistu3137/Web_Service](https://github.com/mengistu3137/Web_Service)
 
 ---
