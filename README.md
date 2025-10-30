@@ -30,9 +30,6 @@
 >
 > Please navigate to the respective branches above to review each completed exercise in detail.
 
----
----
-
 ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [Implementation Steps](#2-implementation-steps)
