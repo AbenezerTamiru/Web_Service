@@ -45,20 +45,20 @@
 
 ## 1. Introduction
 
-This report covers the development and testing of different types of **Java-based web services** and API testing tools.  
-The assignment includes three major exercises:
+This report provides an overview of the development and testing of various **Java-based web services** and API testing tools. The assignment is structured into three key sections:
 
-### 1.1 Java Web Service Development
-This exercise focuses on building a **RESTful web service** using Java  with Spring Boot.  
-The goal is to understand how to create and expose HTTP endpoints that handle CRUD operations.
+### 1.1 Developing a Java Web Service
 
-### 1.2 Web API Design and Testing Tools
-This part explores **API design principles** and the use of **Postman** for testing and validating REST APIs.  
-It emphasizes sending various HTTP requests (GET, POST, PUT, DELETE) and interpreting the JSON responses.
+In this section, the focus is on creating a **RESTful web service** using Java and Spring Boot. The objective is to learn how to define and expose HTTP endpoints that facilitate CRUD (Create, Read, Update, Delete) operations.
 
-### 1.3 SOAP-based Web Services
-This section focuses on developing a **SOAP web service** using **JAX-WS** in Java.  
-The objective is to understand how XML-based messages are structured and exchanged between client and server.
+### 1.2 Exploring Web API Design and Testing Tools
+
+Here, the emphasis is on **API design concepts** and utilizing **Postman** for testing and validating REST APIs. This includes working with different HTTP methods (GET, POST, PUT, DELETE) and understanding how to interpret JSON responses from these requests.
+
+### 1.3 SOAP Web Services Development
+
+This part delves into the creation of a **SOAP-based web service** using **JAX-WS** in Java. The goal is to understand the structure and communication of XML-based messages exchanged between a client and server.
+
 
 ---
 
