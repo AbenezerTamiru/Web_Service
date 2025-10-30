@@ -45,39 +45,39 @@
 
 ## 1. Introduction
 
-This report covers the development and testing of different types of **Java-based web services** and API testing tools.  
-The assignment includes three major exercises:
+This document presents the implementation and evaluation of various Java-based web services and API testing methodologies.  
+The project consists of three primary components:
 
-### 1.1 Java Web Service Development
-This exercise focuses on building a **RESTful web service** using Java  with Spring Boot.  
-The goal is to understand how to create and expose HTTP endpoints that handle CRUD operations.
+### 1.1 RESTful Web Service Development in Java
+This component centers on constructing a RESTful web service utilizing Java with the Spring Boot framework.  
+The primary objective is to demonstrate the creation and exposure of HTTP endpoints capable of performing CRUD operations.
 
-### 1.2 Web API Design and Testing Tools
-This part explores **API design principles** and the use of **Postman** for testing and validating REST APIs.  
-It emphasizes sending various HTTP requests (GET, POST, PUT, DELETE) and interpreting the JSON responses.
+### 1.2 API Design Principles and Testing Utilities
+This segment examines API design best practices and the application of Postman for verifying and validating REST APIs.  
+It highlights the process of dispatching diverse HTTP requests (GET, POST, PUT, DELETE) and analyzing the corresponding JSON responses.
 
-### 1.3 SOAP-based Web Services
-This section focuses on developing a **SOAP web service** using **JAX-WS** in Java.  
-The objective is to understand how XML-based messages are structured and exchanged between client and server.
+### 1.3 SOAP Web Service Implementation
+This portion concentrates on building a SOAP web service by employing JAX-WS in Java.  
+The aim is to comprehend the structure and exchange of XML-based messages between client and server systems.
 
 ---
 
-## 2. Implementation Steps
+## 2. Implementation Procedure
 
-### 2.1 Java RESTful Web Service
+### 2.1 Java RESTful Web Service Development
 
-**Steps:**
-1. Created a new Spring Boot project using [Spring Initializr](https://start.spring.io/).
-2. Added dependency: `spring-boot-starter-web`.
-3. Implemented a simple `UserController` with CRUD endpoints:
-   - `GET /users`
-   - `POST /users`
-   - `PUT /users/{id}`
-   - `DELETE /users/{id}`
-4. Ran the server on port `8080`.
-5. Tested endpoints using Postman.
+Execution Steps:
+1. Initialized a fresh Spring Boot project via Spring Initializr.
+2. Incorporated the essential dependency: spring-boot-starter-web.
+3. Developed a basic UserController class featuring CRUD endpoints:
+   - GET /users
+   - POST /users
+   - PUT /users/{id}
+   - DELETE /users/{id}
+4. Deployed the server to run on port 8080.
+5. Validated all endpoints using Postman.
 
-**Example Code Snippet:**
+Sample Implementation Code:
 ```java
 @RestController
 @RequestMapping("/users")
@@ -96,9 +96,6 @@ public class UserController {
     }
 }
 ```
-
----
-
 
 
 ## 3. Tools and Technologies Used
